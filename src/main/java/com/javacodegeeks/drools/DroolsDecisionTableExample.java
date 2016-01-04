@@ -18,7 +18,7 @@ public class DroolsDecisionTableExample {
 
 	public static void main(String[] args) throws Exception {
 		KnowledgeBase knowledgeBase = createKnowledgeBaseFromSpreadsheet();
-		session = knowledgeBase.newStatelessKnowledgeSession();
+		session =  knowledgeBase.newStatelessKnowledgeSession(); // comment
 
 		Customer customer = new Customer();
 		Product p1 = new Product("Laptop", 15000);
